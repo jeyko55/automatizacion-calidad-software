@@ -29,7 +29,7 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">0</div>
+<div class="counter">1</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">27.439s</div>
+<div class="counter">17.611s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox success" id="successRate">
-<div class="percent">100%</div>
+<div class="infoBox failures" id="successRate">
+<div class="percent">0%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,13 +61,218 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Tests</a>
+<a href="#tab0">Failed tests</a>
 </li>
 <li>
-<a href="#tab1">Standard error</a>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="Realizar credito libre inversion sobre pagina Bancolombia"></a>
+<h3 class="failures">Realizar credito libre inversion sobre pagina Bancolombia</h3>
+<span class="code">
+<pre>net.thucydides.core.webdriver.exceptions.ElementShouldBePresentException: Expected condition failed: waiting for By.xpath: //a[@id='visa-solicita-tarjeta-compras'] to be present (tried for 8 second(s) with 100 milliseconds interval)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: driver.version: unknown
+	at app//net.serenitybdd.core.pages.WebElementFacadeImpl.throwShouldBePresentErrorWithCauseIfPresent(WebElementFacadeImpl.java:1039)
+	at app//net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilPresent(WebElementFacadeImpl.java:1012)
+	at app//net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilElementPresent(WebElementFacadeImpl.java:915)
+	at app//net.serenitybdd.core.pages.WebElementFacadeImpl.click(WebElementFacadeImpl.java:1214)
+	at app//net.serenitybdd.screenplay.actions.ClickOnTarget.performAs(ClickOnTarget.java:13)
+	at app//net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$iPI1KG4s.performAs$accessor$VNQkUcoP(Unknown Source)
+	at java.base@17.0.9/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@17.0.9/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base@17.0.9/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@17.0.9/java.lang.reflect.Method.invoke(Method.java:568)
+	at app//net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:524)
+	at app//net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:504)
+	at app//net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:476)
+	at app//net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:218)
+	at app//net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:205)
+	at app//net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:93)
+	at app//net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at app//net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$iPI1KG4s.performAs(Unknown Source)
+	at app//net.serenitybdd.screenplay.Actor.performTask(Actor.java:299)
+	at app//net.serenitybdd.screenplay.Actor.perform(Actor.java:274)
+	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:215)
+	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:222)
+	at app//co.com.udea.certificacion.autenticacion.interactions.fillBancolombia.performAs(fillBancolombia.java:27)
+	at app//co.com.udea.certificacion.autenticacion.interactions.fillBancolombia$ByteBuddy$fMaSyQHO.performAs$accessor$ZsmLOlSz(Unknown Source)
+	at java.base@17.0.9/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@17.0.9/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base@17.0.9/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@17.0.9/java.lang.reflect.Method.invoke(Method.java:568)
+	at app//net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:524)
+	at app//net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:504)
+	at app//net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:476)
+	at app//net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:218)
+	at app//net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:205)
+	at app//net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:93)
+	at app//net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at app//co.com.udea.certificacion.autenticacion.interactions.fillBancolombia$ByteBuddy$fMaSyQHO.performAs(Unknown Source)
+	at app//net.serenitybdd.screenplay.Actor.performTask(Actor.java:299)
+	at app//net.serenitybdd.screenplay.Actor.perform(Actor.java:274)
+	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:215)
+	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:222)
+	at app//co.com.udea.certificacion.autenticacion.tasks.FillAllThe.performAs(FillAllThe.java:11)
+	at app//co.com.udea.certificacion.autenticacion.tasks.FillAllThe$ByteBuddy$F7TYWqzS.performAs$accessor$Oyyo6EDm(Unknown Source)
+	at java.base@17.0.9/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@17.0.9/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base@17.0.9/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@17.0.9/java.lang.reflect.Method.invoke(Method.java:568)
+	at app//net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:524)
+	at app//net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:504)
+	at app//net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:476)
+	at app//net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:218)
+	at app//net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:205)
+	at app//net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:93)
+	at app//net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at app//co.com.udea.certificacion.autenticacion.tasks.FillAllThe$ByteBuddy$F7TYWqzS.performAs(Unknown Source)
+	at app//net.serenitybdd.screenplay.Actor.performTask(Actor.java:299)
+	at app//net.serenitybdd.screenplay.Actor.perform(Actor.java:274)
+	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:215)
+	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:222)
+	at app//co.com.udea.certificacion.autenticacion.stepdefinitions.PerformCreditStepDefinition.ingresoInformacionCredito(PerformCreditStepDefinition.java:47)
+	at ✽.ingreso la informacion de mi credito(file:///C:/Users/User/automatizacion-calidad-software%20-%20bancolombia/src/test/resources/features/realizar_credito_libre_inversion.feature:8)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for By.xpath: //a[@id='visa-solicita-tarjeta-compras'] to be present (tried for 8 second(s) with 100 milliseconds interval)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: driver.version: unknown
+	at app//org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:261)
+	at app//org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at app//net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilPresent(WebElementFacadeImpl.java:1009)
+	at app//net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilElementPresent(WebElementFacadeImpl.java:915)
+	at app//net.serenitybdd.core.pages.WebElementFacadeImpl.click(WebElementFacadeImpl.java:1214)
+	at app//net.serenitybdd.screenplay.actions.ClickOnTarget.performAs(ClickOnTarget.java:13)
+	at app//net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$iPI1KG4s.performAs$accessor$VNQkUcoP(Unknown Source)
+	at java.base@17.0.9/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@17.0.9/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base@17.0.9/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@17.0.9/java.lang.reflect.Method.invoke(Method.java:568)
+	at app//net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:524)
+	at app//net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:504)
+	at app//net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:476)
+	at app//net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:218)
+	at app//net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:205)
+	at app//net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:93)
+	at app//net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at app//net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$iPI1KG4s.performAs(Unknown Source)
+	at app//net.serenitybdd.screenplay.Actor.performTask(Actor.java:299)
+	at app//net.serenitybdd.screenplay.Actor.perform(Actor.java:274)
+	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:215)
+	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:222)
+	at app//co.com.udea.certificacion.autenticacion.interactions.fillBancolombia.performAs(fillBancolombia.java:27)
+	at app//co.com.udea.certificacion.autenticacion.interactions.fillBancolombia$ByteBuddy$fMaSyQHO.performAs$accessor$ZsmLOlSz(Unknown Source)
+	at java.base@17.0.9/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@17.0.9/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base@17.0.9/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@17.0.9/java.lang.reflect.Method.invoke(Method.java:568)
+	at app//net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:524)
+	at app//net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:504)
+	at app//net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:476)
+	at app//net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:218)
+	at app//net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:205)
+	at app//net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:93)
+	at app//net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at app//co.com.udea.certificacion.autenticacion.interactions.fillBancolombia$ByteBuddy$fMaSyQHO.performAs(Unknown Source)
+	at app//net.serenitybdd.screenplay.Actor.performTask(Actor.java:299)
+	at app//net.serenitybdd.screenplay.Actor.perform(Actor.java:274)
+	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:215)
+	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:222)
+	at app//co.com.udea.certificacion.autenticacion.tasks.FillAllThe.performAs(FillAllThe.java:11)
+	at app//co.com.udea.certificacion.autenticacion.tasks.FillAllThe$ByteBuddy$F7TYWqzS.performAs$accessor$Oyyo6EDm(Unknown Source)
+	at java.base@17.0.9/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@17.0.9/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base@17.0.9/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@17.0.9/java.lang.reflect.Method.invoke(Method.java:568)
+	at app//net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:524)
+	at app//net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:504)
+	at app//net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:476)
+	at app//net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:218)
+	at app//net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:205)
+	at app//net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:93)
+	at app//net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at app//co.com.udea.certificacion.autenticacion.tasks.FillAllThe$ByteBuddy$F7TYWqzS.performAs(Unknown Source)
+	at app//net.serenitybdd.screenplay.Actor.performTask(Actor.java:299)
+	at app//net.serenitybdd.screenplay.Actor.perform(Actor.java:274)
+	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:215)
+	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:222)
+	at app//co.com.udea.certificacion.autenticacion.stepdefinitions.PerformCreditStepDefinition.ingresoInformacionCredito(PerformCreditStepDefinition.java:47)
+	at java.base@17.0.9/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@17.0.9/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base@17.0.9/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@17.0.9/java.lang.reflect.Method.invoke(Method.java:568)
+	at app//io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at app//io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at app//io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at app//io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at app//io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at app//io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at app//io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at app//io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at app//io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at app//io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at app//io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at app//io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at app//io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at app//io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at app//io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at app//io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at app//io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at app//io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at app//io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at app//org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at app//org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at app//org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at app//org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at app//org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at app//org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at app//org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at app//io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at app//io.cucumber.junit.CucumberSerenityBaseRunner.runChild(CucumberSerenityBaseRunner.java:332)
+	at app//io.cucumber.junit.CucumberSerenityBaseRunner.runChild(CucumberSerenityBaseRunner.java:53)
+	at app//org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at app//org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at app//org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at app//org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at app//org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at app//io.cucumber.junit.CucumberSerenityBaseRunner$RunCucumber.evaluate(CucumberSerenityBaseRunner.java:363)
+	at app//org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at app//org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:108)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:40)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:60)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:52)
+	at java.base@17.0.9/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@17.0.9/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base@17.0.9/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@17.0.9/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$2.run(TestWorker.java:176)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -78,18 +283,18 @@
 </tr>
 </thead>
 <tr>
-<td class="success">Realizar credito libre inversion sobre pagina Bancolombia</td>
-<td class="success">27.439s</td>
-<td class="success">passed</td>
+<td class="failures">Realizar credito libre inversion sobre pagina Bancolombia</td>
+<td class="failures">17.611s</td>
+<td class="failures">failed</td>
 </tr>
 </table>
 </div>
-<div id="tab1" class="tab">
+<div id="tab2" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>may. 28, 2024 1:32:23 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+<pre>may. 28, 2024 2:27:44 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 125
-may. 28, 2024 1:32:23 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may. 28, 2024 2:27:44 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 125.0.6422.77. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.16.1` where the version (&quot;v86&quot;) matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 </pre>
 </span>
@@ -102,7 +307,7 @@ WARNING: Unable to find version of CDP to use for 125.0.6422.77. You may need to
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.2</a> at 28/05/2024, 1:32:49 p. m.</p>
+<a href="http://www.gradle.org">Gradle 8.2</a> at 28/05/2024, 2:28:01 p. m.</p>
 </div>
 </div>
 </body>

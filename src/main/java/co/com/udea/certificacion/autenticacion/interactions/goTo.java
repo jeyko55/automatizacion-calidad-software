@@ -5,15 +5,17 @@ import net.serenitybdd.screenplay.Interaction;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 
-import static co.com.udea.certificacion.autenticacion.userinterfaces.BancolombiaPage.BOTON_SIMULAR_LIBRE_INVERSION;
+import static co.com.udea.certificacion.autenticacion.userinterfaces.BancolombiaPage.*;
 
-public class clickSimularLibreInversion implements Interaction {
+public class goTo implements Interaction {
     @Override
     public <T extends Actor> void performAs(T actor) {
+        actor.attemptsTo(Click.on(BOTON_SABER_MAS_CREDITOS));
         actor.attemptsTo(Click.on(BOTON_SIMULAR_LIBRE_INVERSION));
+        actor.attemptsTo(Click.on(BOTON_CONTINUAR));
     }
 
-    public static clickSimularLibreInversion inPage(){
-        return Tasks.instrumented(clickSimularLibreInversion.class);
+    public static goTo page(){
+        return Tasks.instrumented(goTo.class);
     }
 }

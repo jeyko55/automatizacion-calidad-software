@@ -4,13 +4,14 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Interaction;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
+import net.serenitybdd.screenplay.actions.JavaScriptClick;
 
 import static co.com.udea.certificacion.autenticacion.userinterfaces.BancolombiaPage.TEXT_AREA_SOLICITUD_FECHA_NACIMIENTO;
 
 public class clickRequestDate implements Interaction {
     @Override
     public <T extends Actor> void performAs(T actor) {
-        actor.attemptsTo(Click.on(TEXT_AREA_SOLICITUD_FECHA_NACIMIENTO));
+        actor.attemptsTo(JavaScriptClick.on(TEXT_AREA_SOLICITUD_FECHA_NACIMIENTO));
     }
 
     public static clickRequestDate inTextArea(){

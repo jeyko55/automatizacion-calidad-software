@@ -1,7 +1,7 @@
 #author:
   #information
-
-Feature: Realizar un credito libre inversion en pagina Bancolombia. Yo Como cliente de Bancolombia, quiero solicitar un crédito de libre inversión en la página web para obtener financiamiento más fácilmente.
+#HU: Yo Como cliente de Bancolombia, quiero solicitar un credito de libre inversion en la pagina web para obtener financiamiento mas facilmente.
+Feature: realizar_credito_libre_inversion.feature
 
   Scenario: Realizar credito libre inversion sobre pagina Bancolombia
     Given que me encuentro en la pagina de Bancolombia

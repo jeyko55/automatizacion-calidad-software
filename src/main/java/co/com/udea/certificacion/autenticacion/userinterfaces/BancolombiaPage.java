@@ -22,14 +22,14 @@ public class BancolombiaPage extends PageObject {
    public static final Target BOTON_CEDULA = Target.the("el boton cedula de ciudadanía").locatedBy("//ul[@id='documentType-container']/li[4]");
    public static final Target TEXT_AREA_NUMERO_DOCUMENTO = Target.the("el espacio para ingresar el numero del documento").locatedBy("//input[contains(@class,'ng-untouched ng-pristine')]");
    public static final Target TEXT_AREA_NUMERO_CELULAR = Target.the("el espacio para ingresar el numero del celular").locatedBy("//input[contains(@class,'ng-pristine ng-invalid')]");
-   public static final Target TEXT_AREA_CORREO_ELECTRONICO = Target.the("el espacio para ingresar el correo electronico").locatedBy("(//input[contains(@class,'ng-pristine ng-invalid')])[2]");
+   public static final Target TEXT_AREA_CORREO_ELECTRONICO = Target.the("el espacio para ingresar el correo electronico").locatedBy("//em[text()='mail']/following-sibling::input");
    public static final Target CHECKBOX = Target.the("el checkbox de autorización").locatedBy("//input[@id='habeasData']/following-sibling::span[1]");
    public static final Target BOTON_SEGUNDO_CONTINUAR = Target.the("el segundo boton para continuar el proceso").locatedBy("//button[contains(@class,'bc-button bc-button-fill')]");
    public static final Target TEXT_AREA_NOMBRE = Target.the("el espacio para ingresar los nombres").locatedBy("//input[contains(@class,'ng-untouched ng-pristine')]");
    public static final Target TEXT_AREA_APELLIDOS = Target.the("el espacio para ingresar los apellidos").locatedBy("//input[contains(@class,'ng-untouched ng-pristine')]");
-   public static final Target TEXT_AREA_SOLICITUD_FECHA_NACIMIENTO = Target.the("fecha de nacimiento al rellenar solicitud").locatedBy("//input[@data-listener-added_d51a2bb7='true']");
+   public static final Target TEXT_AREA_SOLICITUD_FECHA_NACIMIENTO = Target.the("fecha de nacimiento al rellenar solicitud").locatedBy("//em[text()='calendar']/following-sibling::input");
    public static final Target BOTON_MES_ACTUAL= Target.the("boton con el mes actual").locatedBy("//em[text()='arrow2-left']/following-sibling::h6");
-   public static final Target BOTON_NACIMIENTO= Target.the("boton con el año de nacimiento de nuevo").locatedBy("//h6[@class='bc-calendar-current-selection outline-element']");
+   public static final Target BOTON_NACIMIENTO= Target.the("boton con el año de nacimiento de nuevo").locatedBy("//h6[text()='2024']");
    public static final Target BOTON_IZQUIERDA = Target.the("boton para moverse a la izquierda").locatedBy("//em[contains(@class,'bc-icon bc-sm')]");
    public static final Target BOTON_SEGUNDO_SIGLO= Target.the("boton con el año 2000").locatedBy("//p[@id='YEAR2000']");
    public static final Target BOTON_SEGUNDO_ENERO= Target.the("boton con el mes enero").locatedBy("//p[@month_number='0']");

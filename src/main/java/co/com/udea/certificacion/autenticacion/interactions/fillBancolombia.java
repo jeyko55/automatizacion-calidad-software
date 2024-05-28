@@ -15,7 +15,7 @@ import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.*;
 public class fillBancolombia implements Interaction {
     @Override
     public <T extends Actor> void performAs(T actor) {
-        actor.attemptsTo(Click.on(BOTON_SI));
+        actor.attemptsTo(JavaScriptClick.on(BOTON_SI));
         actor.attemptsTo(Enter.theValue("5000000").into(TEXT_AREA_MONTO));
         actor.attemptsTo(Enter.theValue("60").into(TEXT_AREA_MESES));
         actor.attemptsTo(Click.on(CAMPO_FECHA));

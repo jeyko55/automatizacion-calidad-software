@@ -23,13 +23,6 @@ public class fillBancolombia implements Interaction {
         actor.attemptsTo(Click.on(BOTON_ENERO));
         actor.attemptsTo(Click.on(BOTON_DIA));
         actor.attemptsTo(Click.on(BOTON_SIMULAR));
-
-        try {
-            Thread.sleep(40000); // Espera durante 30 segundos (ajusta este valor según sea necesario)
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
         actor.attemptsTo(Click.on(BOTON_SOLICITAR_CREDITO));
         actor.attemptsTo(
                 Scroll.to(TIPO_DOCUMENTO_TEXT_AREA),
@@ -51,12 +44,6 @@ public class fillBancolombia implements Interaction {
         actor.attemptsTo(Enter.theValue("pruebafabrica@udea.edu.co").into(TEXT_AREA_CORREO_ELECTRONICO));
         actor.attemptsTo(Click.on(CHECKBOX));
         actor.attemptsTo(Click.on(BOTON_SEGUNDO_CONTINUAR));
-        try {
-            Thread.sleep(40000); // Espera durante 30 segundos (ajusta este valor según sea necesario)
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
         actor.attemptsTo(Enter.theValue("Juan Fernando").into(TEXT_AREA_NOMBRE));
         actor.attemptsTo(Enter.theValue("Velasco Torres").into(TEXT_AREA_APELLIDOS));
         actor.attemptsTo(JavaScriptClick.on(TEXT_AREA_SOLICITUD_FECHA_NACIMIENTO));
@@ -74,12 +61,6 @@ public class fillBancolombia implements Interaction {
         actor.attemptsTo(Enter.theValue("3205329853").into(TEXT_AREA_CELULAR_DE_NUEVO));
         actor.attemptsTo(Enter.theValue("4000000").into(TEXT_AREA_INGRESOS_MENSUALES));
         actor.attemptsTo(Click.on(BOTON_SIGUIENTE));
-
-        try {
-            Thread.sleep(20000); // Espera durante 30 segundos (ajusta este valor según sea necesario)
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
     }
 
     public static fillBancolombia data(){

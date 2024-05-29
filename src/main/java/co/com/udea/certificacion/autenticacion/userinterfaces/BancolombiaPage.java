@@ -47,8 +47,6 @@ public class BancolombiaPage extends PageObject {
 
    public static final Target TEXT_AREA_CIUDAD_NO_DISPONIBLE= Target.the("Texto con la una ciudad que no esta disponible").locatedBy("//ul[@id='cityId-container']//li[1]");
 
-   public static final Target MENSAJE_ERROR= Target.the("boton con el mensaje de error").locatedBy("(//button[text()='Salir'])[2]");
-
-
+   public static final Target MENSAJE_ERROR= Target.the("boton con el mensaje de error").locatedBy("//section[@class='bc-modal-button-container']//button[1]");
 
 }

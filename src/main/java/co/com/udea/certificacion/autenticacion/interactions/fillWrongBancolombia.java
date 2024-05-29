@@ -27,7 +27,7 @@ public class fillWrongBancolombia implements Interaction {
         actor.attemptsTo(Click.on(BOTON_SIMULAR));
 
         try {
-            Thread.sleep(40000); // Espera durante 30 segundos (ajusta este valor según sea necesario)
+            Thread.sleep(20000); // Espera durante 30 segundos (ajusta este valor según sea necesario)
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -56,7 +56,7 @@ public class fillWrongBancolombia implements Interaction {
         actor.attemptsTo(Click.on(BOTON_SEGUNDO_CONTINUAR));
 
         try {
-            Thread.sleep(40000); // Espera durante 30 segundos (ajusta este valor según sea necesario)
+            Thread.sleep(20000); // Espera durante 30 segundos (ajusta este valor según sea necesario)
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -80,7 +80,7 @@ public class fillWrongBancolombia implements Interaction {
         actor.attemptsTo(Click.on(BOTON_SIGUIENTE));
 
         try {
-            Thread.sleep(20000); // Espera durante 30 segundos (ajusta este valor según sea necesario)
+            Thread.sleep(10000); // Espera durante 30 segundos (ajusta este valor según sea necesario)
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

@@ -41,8 +41,13 @@ public class BancolombiaPage extends PageObject {
    public static final Target TEXT_AREA_CELULAR_DE_NUEVO= Target.the("Espacio para poner el celular").locatedBy("//input[@formcontrolname='phone']");
    public static final Target TEXT_AREA_INGRESOS_MENSUALES= Target.the("Espacio para poner los ingresos mensuales").locatedBy("//input[@formcontrolname='monthlyIncome']");
    public static final Target BOTON_SIGUIENTE= Target.the("Boton siguiente dentro de la pagina").locatedBy("//button[contains(@class,'max-w-xs bc-button')]");
-
    public static final Target TEXTO_VERIFICACION= Target.the("Texto con la verificación que necesitamos").locatedBy("//h1[contains(@class,'bc-cibsans-font-style-12-bold bc-text-center')]");
+
+
+
+   public static final Target TEXT_AREA_CIUDAD_NO_DISPONIBLE= Target.the("Texto con la una ciudad que no esta disponible").locatedBy("//ul[@id='cityId-container']//li[1]");
+
+   public static final Target MENSAJE_ERROR= Target.the("boton con el mensaje de error").locatedBy("(//button[text()='Salir'])[2]");
 
 
 
